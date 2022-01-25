@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+  var numss = [1,6,3,2];
+    
+    var countQuadruplets = function(nums) {
+        
+        var count = 0;//存储最终数组个数
+        let listmix = 0;
+        //对数组进行排序
+        let numsss = nums.sort(function(a,b){return a-b});
+        console.log(numsss);
+        //取出数组最后一项，将前三项相加
+        let max = numsList.pop();
+        for(var i = 0;i<=numsList.length -1;i++){
+             
+            listmix += numsList[i]
+        }
+        if ( listmix == max){
+            count+=1
+            
+            return count
+
+        }
+    };
+            
+    countQuadruplets(numss);
+
+    
+    
+
+    </script>
+</body>
+</html>

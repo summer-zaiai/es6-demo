@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button id="myBtn">点击</button>
+</body>
+    <script>
+        const btn = document.getElementById('myBtn');
+        const div = document.getElementById('myDiv');
+        btn.onclick = function(){
+             var xhr=null;  
+	     if (window.XMLHttpRequest)  
+	       {// 兼容 IE7+, Firefox, Chrome, Opera, Safari  
+	       xhr = new XMLHttpRequest();  
+	       } else{// 兼容 IE6, IE5 
+	         xhr = new ActiveXObject("Microsoft.XMLHTTP");  
+	       } 
+
+
+           var obj = { name:'zzzz',age:'18'};
+           xhr.open("GET","https://www.baidu.com/img/flexible/logo/pc/result.png");  
+	         xhr.send();  
+             div.innerHTML=xhr.responseText; //获取数据直接显示在页面上
+             for(let key  in obj){
+                 console.log(key + '---' + obj[key])
+                     }
+        }
+
+
+    </script>
+</html>

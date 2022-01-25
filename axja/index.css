@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#zxy {
+  width: 450px;
+  height: 100px;
+  border: solid 2px red;
+}
+#zxy .inner {
+  background: green;
+  width: 50px;
+  height: 50px;
+}
+#zxy .inner:hover {
+  background: #45eb12;
+}
+#zxy .inner2 {
+  background: #45eb12;
+  width: 50px;
+  height: 80px;
+}
+#zxy .inner3 {
+  background: black;
+  width: 30px;
+  height: 30px;
+}
+#zxy .inner4 {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-width: 40px;
+  border-style: dashed dashed dashed solid ;
+  border-color: transparent transparent transparent #f01237;
+}

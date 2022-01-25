@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lis1 = [4,3,5,2,6,1];
+        var lis2 = [7,6,8,9,6,7,5];
+    function marge(left,right){
+	var result=[];
+	il=0;
+	ir=0;
+	while(il<left.length && ir<right.length){
+		if(left[il]<right[ir]){
+			result.push(left[il++]);
+		}else{
+			result.push(right[ir++]);
+		}
+	}
+	while(left[il]){
+        console.log(left[li]);
+		result.push(left[il++]);
+	}
+	while(right[ir]){
+		result.push(right[ir++]);
+	}
+	return result;
+}
+console.log(marge(lis1,lis2));
+    </script>
+</body>
+</html>
