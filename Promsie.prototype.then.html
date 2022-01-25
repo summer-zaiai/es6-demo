@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //创建peomise对象
+        const p = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve('用户数据');
+            },1000)
+        });
+
+        p.then(value =>{
+            console.log(value);
+        },reason=>{
+            console.log(reason);
+        })
+        //p.then then 方法的返回结果是Promise对象，对象状态由回调函数的执行结果
+        //1.如果回调函数中返回的结果是非Promise类型的属性，状态为成功
+    </script>
+</body>
+</html>
