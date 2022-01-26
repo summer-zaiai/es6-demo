@@ -14,8 +14,35 @@
         //export命令用于规定模块的对外接口
         //import命令用于输入其他模块提供的功能
         
-        import * as m1 from "./src/js/m1.js"
-        console.log(m1);
+        //通用方式
+        // import * as m1 from "./src/js-export/m1.js"
+        // console.log(m1);
+
+
+        // import * as m2 from "./src/js-export/m2.js"
+        // console.log(m2);
+
+
+        // import * as m3 from "./src/js-export/m3.js"
+        // console.log(m3);
+        // m3.default.change();//默认调用得加default
+
+
+        // // 2.解构赋值形式
+        // import {school,teach} from "./src/js-export/m1.js";
+        // import {school as guigu,findJob} from "./src/js-export/m2.js";
+        // // 别名
+        // import {default as m3} from "./src/js-export/m3.js";
+        // // default使用别名
+        // console.log(school);
+        // console.log(teach);
+        // console.log(guigu,findJob);
+        // console.log(m3);
+
+
+        //3.简便形式 针对默认暴露
+
     </script>
+    <script type="module" src="./src/js-export/app.js" ></script>
 </body>
 </html>
